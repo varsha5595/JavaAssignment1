@@ -16,9 +16,9 @@ public class MyMainClass {
         DBImplementation impleObj= new DBImplementation();
 
         Connection connection;
-        /*String createQuery= "CREATE TABLE VarshaSharma("+
+        String createQuery= "CREATE TABLE VarshaSharma("+
                 "ID INTEGER NOT NULL,"+
-                "NAME VARCHAR(30));";*/
+                "NAME VARCHAR(30));";
         String insertQuery= "insert into VarshaSharma values"+
                                                         "(1,'Varsha');";
 
@@ -26,12 +26,12 @@ public class MyMainClass {
 
         impleObj.registerConnection();
 
-        /*connection = impleObj.connectionEstablish();
+        connection = impleObj.connectionEstablish();
         impleObj.create(createQuery, connection);
 
 
         connection = impleObj.connectionEstablish();
-        impleObj.insert(insertQuery, connection);*/
+        impleObj.insert(insertQuery, connection);
 
 
         connection = impleObj.connectionEstablish();
